@@ -1,0 +1,87 @@
+theme = "onedark"
+
+[editor]
+line-number             = "relative"
+path-completion         = true
+popup-border            = "popup"
+bufferline              = "multiple"
+end-of-line-diagnostics = "disable"
+
+[editor.statusline]
+left        = ["mode", "spinner", "file-name"]
+right       = ["diagnostics", "position", "file-type"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.lsp]
+enable                   = true
+display-inlay-hints      = true
+inlay-hints-length-limit = 25
+display-color-swatches   = true
+display-messages         = false
+
+[editor.file-picker]
+hidden = true
+
+[editor.auto-save]
+after-delay.enable  = true
+after-delay.timeout = 500
+
+[editor.indent-guides]
+render      = true
+character   = "▏"
+skip-levels = 1
+
+[editor.gutters]
+layout                 = ["diff", "diagnostics", "line-numbers", "spacer"]
+line-numbers.min-width = 1
+
+[editor.soft-wrap]
+enable            = true
+max-wrap          = 25
+max-indent-retain = 0
+wrap-indicator    = ""
+
+[editor.smart-tab]
+enable = true
+
+[editor.inline-diagnostics]
+cursor-line = "disable"
+other-lines = "disable"
+
+# General keybinds
+[keys.normal]
+C-S-s = ":w"                                  # Ctrl+Shift+S to save
+C-p   = "file_picker"                         # Open fuzzy file picker
+Cmd-p = "file_picker"                         # Open fuzzy file picker
+C-e   = "file_explorer"                       # Open file explorer (tree view)
+Cmd-e = "file_explorer"                       # Open file explorer (tree view) (macOS)
+C-S-e = "file_explorer_in_current_directory"
+C-S-p = "command_palette"
+C-S-t = ":vsplit-new"                         # Open a new vertical split
+"C-," = ":open ~/.config/helix/config.toml"   # Open config
+S-tab = ":streal-open"
+
+# Oil keybinds
+[keys.normal.space.o]
+o = ":oil"
+e = ":oil-enter"
+b = ":oil-back"
+g = ":oil-root"
+s = ":oil-save"
+r = ":oil-refresh"
+q = ":oil-close"
+h = ":oil-toggle-hidden"
+i = ":oil-toggle-git-ignored"
+
+# Space menu
+[keys.normal.space]
+O = ":trail-open" # Open recent projects
+
+
