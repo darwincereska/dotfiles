@@ -20,6 +20,13 @@ config = { inlay_hints = true, needs_update_severity = 1 }
 [language-server.steel-language-server]
 command = "steel-language-server"
 
+# AstroJS LSP
+[language-server.astro-language-server]
+command = "astro-language-server"
+args = ["--stdio"]
+config = { "typescript" = { "tsdk" = "/opt/homebrew/lib/node_modules/typescript/lib/"}, "environment" = "node" }
+
+
 # TOML LSP
 [language-server.taplo]
 command = "taplo"
@@ -37,3 +44,11 @@ language-servers = [ "steel-language-server" ]
 [[language]]
 name = "rust"
 indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "astro"
+scope = "source.astro"
+injection-regex = "astro"
+file-types = ["astro"]
+roots = ["package.json", "astro.config.mjs"]
+language-servers = ["astro-language-server"]

@@ -1,2 +1,4 @@
 [yadm]
 	cipher = openssl
+[push]
+	autoSetupRemote = true
