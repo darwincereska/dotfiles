@@ -4,3 +4,6 @@
 [submodule ".config/hypr"]
 	path = .config/hypr
 	url = https://git.darwincereska.dev/darwincereska/hypr.git
+[submodule "Downloads/hypr"]
+	path = Downloads/hypr
+	url = https://git.darwincereska.dev/darwincereska/hypr.git
