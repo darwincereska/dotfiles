@@ -1,0 +1,76 @@
+// This configuration is merged with the default vicinae configuration file, which you can obtain by running the `vicinae config default` command.
+// Every item defined in this file takes precedence over the values defined in the default config or any other imported file.
+//
+// You can make manual edits to this file, however you should keep in mind that this file may be written to by vicinae when a configuration change is made through the GUI.
+// When that happens, any custom comments or formatting will be lost.
+//
+// If you want to maintain a configuration file with your own comments and formatting, you should create a separate file and add it to the 'imports' array.
+//
+// Learn more about configuration at https://docs.vicinae.com/config
+
+{
+   "$schema": "https://vicinae.com/schemas/config.json",
+   "theme": {
+      "dark": {
+         "name": "noctalia"
+      }
+   },
+   "providers": {
+      "@jomifepe/store.raycast.bitwarden": {
+         "preferences": {
+            "cliPath": "/usr/bin/bw",
+            "fetchFavicons": true,
+            "repromptIgnoreDuration": "-1",
+            "serverUrl": "https://passwords.darwincereska.dev",
+            "shouldCacheVaultItems": true,
+            "syncOnLaunch": true,
+            "windowActionOnCopy": "close"
+         },
+         "entrypoints": {
+            "authenticator": {
+               "alias": "auth"
+            },
+            "create-folder": {
+               "enabled": false
+            },
+            "create-login": {
+               "enabled": false
+            },
+            "create-send": {
+               "enabled": false
+            },
+            "generate-password": {
+               "enabled": false
+            },
+            "generate-password-quick": {
+               "enabled": false
+            },
+            "lock-vault": {
+               "enabled": false
+            },
+            "logout-vault": {
+               "enabled": false
+            },
+            "receive-send": {
+               "enabled": false
+            },
+            "search": {
+               "alias": "pass"
+            },
+            "search-sends": {
+               "enabled": false
+            }
+         }
+      },
+      "power": {
+         "entrypoints": {
+            "lock": {
+               "preferences": {
+                  "confirm": false,
+                  "customProgram": "qs -c noctalia-shell ipc call lockScreen lock"
+               }
+            }
+         }
+      }
+   }
+}

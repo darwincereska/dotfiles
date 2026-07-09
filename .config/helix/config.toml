@@ -66,22 +66,22 @@ C-S-e = "file_explorer_in_current_directory"
 C-S-p = "command_palette"
 C-S-t = ":vsplit-new"                         # Open a new vertical split
 "C-," = ":open ~/.config/helix/config.toml"   # Open config
-S-tab = ":streal-open"
+# S-tab = ":streal-open"
 
 # Oil keybinds
-[keys.normal.space.o]
-o = ":oil"
-e = ":oil-enter"
-b = ":oil-back"
-g = ":oil-root"
-s = ":oil-save"
-r = ":oil-refresh"
-q = ":oil-close"
-h = ":oil-toggle-hidden"
-i = ":oil-toggle-git-ignored"
+# [keys.normal.space.o]
+# o = ":oil"
+# e = ":oil-enter"
+# b = ":oil-back"
+# g = ":oil-root"
+# s = ":oil-save"
+# r = ":oil-refresh"
+# q = ":oil-close"
+# h = ":oil-toggle-hidden"
+# i = ":oil-toggle-git-ignored"
 
-# Space menu
-[keys.normal.space]
-O = ":trail-open" # Open recent projects
+# # Space menu
+# [keys.normal.space]
+# O = ":trail-open" # Open recent projects
 
 
