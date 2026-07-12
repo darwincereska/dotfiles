@@ -16,6 +16,12 @@
       }
    },
    "providers": {
+      "@Gimblet/store.vicinae.noctalia-shell-wallpaper-selector": {
+         "preferences": {
+            "display_name": "eDP-1",
+            "wallpaper_directory": "/home/darwin/Pictures/Wallpapers"
+         }
+      },
       "@jomifepe/store.raycast.bitwarden": {
          "preferences": {
             "cliPath": "/usr/bin/bw",
@@ -67,7 +73,7 @@
             "lock": {
                "preferences": {
                   "confirm": false,
-                  "customProgram": "qs -c noctalia-shell ipc call lockScreen lock"
+                  "customProgram": "noctalia msg session lock"
                }
             }
          }

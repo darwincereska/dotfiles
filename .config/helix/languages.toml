@@ -9,6 +9,13 @@
 # indent = { tab-width = 2, unit = "  " }
 # formatter = { command = "mylang-formatter" , args = ["--stdin"] }
 # language-servers = [ "mylang-lsp" ]
+[language-server.hx-lsp]
+command = "hx-lsp"
+
+[language-server.hx-lsp.config]
+markdown = false
+documentColor = true
+
 
 # Cargo.toml LSP
 [language-server.crates-lsp]
@@ -34,7 +41,7 @@ args = ["lsp", "stdio"]
 
 [[language]]
 name = "toml"
-language-servers = [ "crates-lsp", "taplo" ]
+language-servers = [ "crates-lsp", "taplo", "hx-lsp" ]
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
 [[language]]
