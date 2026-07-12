@@ -18,9 +18,6 @@ clipboard-paste-protection = false
 copy-on-select = false
 
 # Application
-desktop-notifications = false
-notify-on-command-finish = unfocused
-notify-on-command-finish-action = notify
 confirm-close-surface = false
 font-family = "FiraCode Nerd Font"
 font-feature = "liga"

@@ -114,7 +114,6 @@ enabled = []
 clipboard_enabled = false
 font_family = "Adwaita Sans"
 launch_apps_custom_command = "vicinae toggle"
-settings_show_advanced = false
 time_format = "{:%-I:%M %p}"
 
     [[shell.session.actions]]
@@ -154,14 +153,14 @@ time_format = "{:%-I:%M %p}"
 
 [theme]
 builtin = "Nord"
-community_palette = "One Dark Two"
+community_palette = "Espresso Cream"
 mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "vibrant"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "qt", "starship" ]
-    community_ids = [ "spicetify", "vicinae", "discord" ]
+    community_ids = [ "spicetify", "vicinae" ]
 
 [wallpaper]
 transition = [ "stripes" ]
