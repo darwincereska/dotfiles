@@ -1,0 +1,11 @@
+(require (prefix-in helix. "helix/commands.scm"))
+(require (prefix-in helix.static. "helix/static.scm"))
+(require "helix/configuration.scm")
+(require "oil/oil.scm")
+(require "smooth-scroll/smooth-scroll.scm")
+(require "lsp-picker/lsp-picker.scm")
+(require "streal/streal.scm")
+; (require "trail/trail.scm")
+; (require "forest/forest.scm")
+
+(provide lsp-picker)
