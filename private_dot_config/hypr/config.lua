@@ -5,7 +5,6 @@ local General = {
 }
 ------------------------
 
-
 --- MODIFIER KEYS ---
 local Modifiers = {
     -- Key used for all window related tasks (default: SUPER)
@@ -47,8 +46,8 @@ local Appearance = {
 --- INPUT SETTINGS ---
 local Input = {
     keyboard = {
-        layout  = "us",
-        variant = "colemak"
+        layout  = "us,us",
+        variant = ",colemak",
     },
 
     mouse = {

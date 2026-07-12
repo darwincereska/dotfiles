@@ -6,7 +6,8 @@ local config = require("config")
 
 hl.config({
   input = {
-    kb_layout = config.input.keyboard.layout,
-    kb_variant = config.input.keyboard.variant
+    kb_layout  = config.input.keyboard.layout,
+    kb_variant = config.input.keyboard.variant,
+    kb_options = "grp:alt_shift_toggle"
   }
 })
